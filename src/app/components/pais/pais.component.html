@@ -1,0 +1,14 @@
+<p-card (click)="navegar(nombre)">
+  <div class="p-grid" style="cursor: pointer;">
+    <div class="p-col"
+         style="text-align: center;">
+      <img [src]="imagen"
+           width="300" />
+    </div>
+  </div>
+  <div class="p-grid">
+    <div class="p-col" style="cursor: pointer;">
+      <h3 style="text-align: center;"> {{ nombre }} </h3>
+    </div>
+  </div>
+</p-card>

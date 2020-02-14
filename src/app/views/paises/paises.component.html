@@ -1,0 +1,7 @@
+<div class="p-grid">
+  <div class="p-col-12 p-sm-12 p-md-6 p-lg-4"
+       *ngFor="let pais of paises">
+    <app-pais [nombre]="pais.nombre"
+              [imagen]="pais.imagen"></app-pais>
+  </div>
+</div>
