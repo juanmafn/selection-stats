@@ -1,7 +1,11 @@
 <div class="p-grid">
-  <div class="p-col-12 p-sm-12 p-md-6 p-lg-6" *ngFor="let jugador of jugadores">
-      <h1 style="text-align: center;"> {{ jugador.nombre }} </h1>
+  <div class="p-col-12 p-sm-12 p-md-6 p-lg-6"
+       *ngFor="let jugador of jugadores">
+    <h1 style="text-align: center;"> Nombre: {{ jugador.jugador.nombre }} </h1>
+    <h2 style="text-align: center;"> Dorsal: {{ jugador.jugador.dorsal }} </h2>
     <p-chart type="radar"
-             [data]="jugador.data"></p-chart>
+             [options]="options"
+             [data]="jugador"></p-chart>
+    <h4 style="text-align: center;"> Comentarios: {{ jugador.jugador.comentarios }} </h4>
   </div>
 </div>

@@ -5,13 +5,14 @@ import { EquipoComponent } from "./views/equipo/equipo.component";
 
 const routes: Routes = [
   { path: "", component: PaisesComponent },
-  { path: "equipo/:pais", component: EquipoComponent }
+  { path: "equipo/:pais", component: EquipoComponent, pathMatch: "full" }
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      scrollPositionRestoration: "enabled"
+      scrollPositionRestoration: "enabled",
+      useHash: true
     })
   ],
   exports: [RouterModule]
